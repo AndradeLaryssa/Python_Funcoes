@@ -1,5 +1,5 @@
 import random
-import funcoes
+import Equipes_funcoes
 
 listaEstudantes = []
 listaDados = []
