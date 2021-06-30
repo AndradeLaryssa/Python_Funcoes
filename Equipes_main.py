@@ -16,26 +16,10 @@ funcoes.cadastrarEstudantes(contador, listaDados, primeiro_ano, listaEstudantes)
 #misturar lista
 random.shuffle(listaEstudantes)
 
-#informações equipe A
-funcoes.listarEquipeA(listaEstudantes)
-funcoes.calcularMediaA(listaEstudantes)
-funcoes.calcularEstudantes3A(listaEstudantes, terceiroA)
-
-#informações equipe B
-funcoes.listarEquipeB(listaEstudantes)
-funcoes.calcularMediaB(listaEstudantes)
-funcoes.calcularEstudantes3B(listaEstudantes, terceiroB)
-
-#informações equipe C
-funcoes.listarEquipeC(listaEstudantes)
-funcoes.calcularMediaC(listaEstudantes)
-funcoes.calcularEstudantes3C(listaEstudantes, terceiroC)
-
-#informações equipe D
-funcoes.listarEquipeD(listaEstudantes)
-funcoes.calcularMediaD(listaEstudantes)
-funcoes.calcularEstudantes3D(listaEstudantes, terceiroD)
+#informações equipes
+funcoes.listarEquipes(listaEstudantes)
+funcoes.calcularMedia(listaEstudantes)
+funcoes.calcularEstudantes3(listaEstudantes, terceiroA, terceiroB, terceiroC, terceiroD)
 
 #percentual alunos primeiro ano
 funcoes.calcularPercentual1(primeiro_ano)
-
