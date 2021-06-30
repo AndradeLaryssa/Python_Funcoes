@@ -12,77 +12,50 @@ def cadastrarEstudantes(contador, listaDados, primeiro_ano, listaEstudantes):
         listaDados.clear()
         contador += 1
 
-def listarEquipeA(listaEstudantes):
-    print(f'Equipe A: Nome:{listaEstudantes[0][0]}, Idade: {listaEstudantes[0][1]}, Ano:{listaEstudantes[0][2]}'
-          f'\nNome:{listaEstudantes[1][0]}, Idade: {listaEstudantes[1][1]}, Ano:{listaEstudantes[1][2]}'
-          f'\nNome:{listaEstudantes[2][0]}, Idade: {listaEstudantes[2][1]}, Ano:{listaEstudantes[2][2]}')
+def listarEquipes(listaEstudantes):
+    for i in range(len(listaEstudantes)):
+        if (i == 0 or i == 1 or i == 2):  # Equipe A
+            print(f'Equipe A - Nome: {listaEstudantes[i][0]} Idade: {listaEstudantes[i][1]} Ano: {listaEstudantes[i][2]}')
+        if (i == 3 or i == 4 or i == 5):  # Equipe B
+            print(f'Equipe B - Nome: {listaEstudantes[i][0]} Idade: {listaEstudantes[i][1]} Ano: {listaEstudantes[i][2]}')
+        if (i == 6 or i == 7 or i == 8):  # Equipe C
+            print(f'Equipe C - Nome: {listaEstudantes[i][0]} Idade: {listaEstudantes[i][1]} Ano: {listaEstudantes[i][2]}')
+        if (i == 9 or i == 10 or i == 11):  # Equipe D
+            print(f'Equipe D - Nome: {listaEstudantes[i][0]} Idade: {listaEstudantes[i][1]} Ano: {listaEstudantes[i][2]}')
 
-def calcularMediaA(listaEstudantes):
-    mediaA = (listaEstudantes[0][1] + listaEstudantes[1][1] + listaEstudantes[2][1]) / 3
-    print(f'Média de idade entre os estudantes da Equipe A: {mediaA :.2f}')
+def calcularMedia(listaEstudantes):
+    for i in range(len(listaEstudantes)):
+        if (i == 0 or i == 1 or i == 2): # Equipe A
+            mediaA = (listaEstudantes[i][1] + listaEstudantes[i][1] + listaEstudantes[i][1]) / 3
+            print(f'Média de idade entre os estudantes da Equipe A: {mediaA :.2f}')
+        if (i == 3 or i == 4 or i == 5):  # Equipe B
+            mediaB = (listaEstudantes[i][1] + listaEstudantes[i][1] + listaEstudantes[i][1]) / 3
+            print(f'Média de idade entre os estudantes da Equipe B: {mediaB :.2f}')
+        if (i == 6 or i == 7 or i == 8):  # Equipe C
+            mediaC = (listaEstudantes[i][1] + listaEstudantes[i][1] + listaEstudantes[i][1]) / 3
+            print(f'Média de idade entre os estudantes da Equipe C: {mediaC :.2f}')
+        if (i == 9 or i == 10 or i == 11):  # Equipe D
+            mediaD = (listaEstudantes[i][1] + listaEstudantes[i][1] + listaEstudantes[i][1]) / 3
+            print(f'Média de idade entre os estudantes da Equipe D: {mediaD :.2f}')
 
-def calcularEstudantes3A(listaEstudantes, terceiroA):
-    if listaEstudantes[0][2] == 3:
-        terceiroA += 1
-    if listaEstudantes[1][2] == 3:
-        terceiroA += 1
-    if listaEstudantes[2][2] == 3:
-        terceiroA += 1
-    print(f'Quantidade de estudantes do 3º ano na Equipe A: {terceiroA}')
-
-def listarEquipeB(listaEstudantes):
-    print(f'Equipe B: Nome:{listaEstudantes[3][0]}, Idade: {listaEstudantes[3][1]}, Ano:{listaEstudantes[3][2]}'
-          f'\nNome:{listaEstudantes[4][0]}, Idade: {listaEstudantes[4][1]}, Ano:{listaEstudantes[4][2]}'
-          f'\nNome:{listaEstudantes[5][0]}, Idade: {listaEstudantes[5][1]}, Ano:{listaEstudantes[5][2]}')
-
-def calcularMediaB(listaEstudantes):
-    mediaB = (listaEstudantes[3][1] + listaEstudantes[4][1] + listaEstudantes[5][1]) / 3
-    print(f'Média de idade entre os estudantes da Equipe B: {mediaB :.2f}')
-
-def calcularEstudantes3B(listaEstudantes, terceiroB):
-    if listaEstudantes[3][2] == 3:
-        terceiroB += 1
-    if listaEstudantes[4][2] == 3:
-        terceiroB += 1
-    if listaEstudantes[5][2] == 3:
-        terceiroB += 1
-    print(f'Quantidade de estudantes do 3º ano na Equipe B: {terceiroB}')
-
-def listarEquipeC(listaEstudantes):
-    print(f'Equipe C: Nome:{listaEstudantes[6][0]}, Idade: {listaEstudantes[6][1]}, Ano:{listaEstudantes[6][2]}'
-          f'\nNome:{listaEstudantes[7][0]}, Idade: {listaEstudantes[7][1]}, Ano:{listaEstudantes[7][2]}'
-          f'\nNome:{listaEstudantes[8][0]}, Idade: {listaEstudantes[8][1]}, Ano:{listaEstudantes[8][2]}')
-
-def calcularMediaC(listaEstudantes):
-    mediaC = (listaEstudantes[6][1] + listaEstudantes[7][1] + listaEstudantes[8][1]) / 3
-    print(f'Média de idade entre os estudantes da Equipe C: {mediaC :.2f}')
-
-def calcularEstudantes3C(listaEstudantes, terceiroC):
-    if listaEstudantes[6][2] == 3:
-        terceiroC += 1
-    if listaEstudantes[7][2] == 3:
-        terceiroC += 1
-    if listaEstudantes[8][2] == 3:
-        terceiroC += 1
-    print(f'Quantidade de estudantes do 3º ano na Equipe C: {terceiroC}')
-
-def listarEquipeD(listaEstudantes):
-    print(f'Equipe D: Nome:{listaEstudantes[9][0]}, Idade: {listaEstudantes[9][1]}, Ano:{listaEstudantes[9][2]}'
-          f'\nNome:{listaEstudantes[10][0]}, Idade: {listaEstudantes[10][1]}, Ano:{listaEstudantes[10][2]}'
-          f'\nNome:{listaEstudantes[11][0]}, Idade: {listaEstudantes[11][1]}, Ano:{listaEstudantes[11][2]}')
-
-def calcularMediaD(listaEstudantes):
-    mediaD = (listaEstudantes[9][1] + listaEstudantes[10][1] + listaEstudantes[11][1]) / 3
-    print(f'Média de idade entre os estudantes da Equipe D: {mediaD :.2f}')
-
-def calcularEstudantes3D(listaEstudantes, terceiroD):
-    if listaEstudantes[9][2] == 3:
-        terceiroD += 1
-    if listaEstudantes[10][2] == 3:
-        terceiroD += 1
-    if listaEstudantes[11][2] == 3:
-        terceiroD += 1
-    print(f'Quantidade de estudantes do 3º ano na Equipe D: {terceiroD}')
+def calcularEstudantes3(listaEstudantes, terceiroA, terceiroB, terceiroC, terceiroD):
+    for i in range(len(listaEstudantes)):
+        if (i == 0 or i == 1 or i == 2):
+             if listaEstudantes[i][2] == 3:
+                terceiroA += 1
+                print(f'Quantidade de estudantes do 3º ano na Equipe A: {terceiroA}')
+        if (i == 3 or i == 4 or i == 5):
+            if listaEstudantes[i][2] == 3:
+                terceiroB += 1
+                print(f'Quantidade de estudantes do 3º ano na Equipe A: {terceiroB}')
+        if (i == 0 or i == 1 or i == 2):
+            if listaEstudantes[i][2] == 3:
+                terceiroC += 1
+                print(f'Quantidade de estudantes do 3º ano na Equipe A: {terceiroC}')
+        if (i == 0 or i == 1 or i == 2):
+            if listaEstudantes[i][2] == 3:
+                terceiroD += 1
+                print(f'Quantidade de estudantes do 3º ano na Equipe A: {terceiroD}')
 
 def calcularPercentual1(primeiro_ano):
     print(f'Percentual de alunos do Primeiro Ano: {(primeiro_ano / 12) * 100 :.2f}%')
